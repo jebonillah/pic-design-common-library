@@ -1,42 +1,41 @@
-# PIC Design Common Library 🌐💡
+# 🌟 PIC Design Common Library & Course Portfolio
 
-**Course:** UNAL-BSU: PIC Design (Spring 2025)  
-**Instructor:** Dr. Samuel Serna  
-**Lab 5:** Sustainable Passive Integrated Photonics 
+**Autor:** [Tu Nombre / Jesús David]  
+**Curso:** UNAL-BSU: PIC Design (Spring 2025 / 2026)  
+**Profesor:** Dr. Samuel Serna  
 
-## 📖 Project Overview
-This repository contains the `pic-design-common-library`, a custom Python package developed as part of Lab 5. The primary goal of this repository is to collect and organize reusable functions for integrated photonics design learned throughout the course.
+## 📖 Descripción General
+Este repositorio sirve como un portafolio integral y una librería de herramientas desarrolladas a lo largo del curso **Passive Integrated Photonics**. 
 
-## 🚀 Features and Required Functions
-The library includes mathematical and physical modeling functions for passive integrated photonic structures, distributed across several modules. The implemented functions cover:
+El repositorio está dividido en dos propósitos principales:
+1. **`picdesign/`**: Una librería de Python modular, reutilizable y documentada para el diseño analítico y numérico de Circuitos Integrados Fotónicos (PICs) pasivos. Incluye cálculos de dispersión, pérdidas, resonadores, interferómetros y herramientas de exportación GDS.
+2. **`coursework/`**: El registro histórico de todas las tareas (Homeworks 1 al 5) y el Proyecto Final del curso, demostrando la evolución en el diseño fotónico, desde el análisis de modos hasta el *Inverse Design* y modelado de óptica no lineal (GNLSE).
 
-* **Resonators:** Effective-index-based Free Spectral Range (FSR) calculation, and ring circumference and radius.
-* **Interferometers:** MZI path-length imbalance calculation.
-* **Waveguides:** Bend loss estimation, approximate single-mode condition, confinement factor estimate, and propagation-loss conversion (between dB/cm and $m^{-1}$).
-* **Sustainability:** Simple Life Cycle Assessment (LCA) score calculator.
-* **Layout:** GDS export helper for fabrication layout.
+## 🗂️ Estructura del Repositorio
 
-## 📁 Repository Structure
-The project rigorously follows the required directory structure:
+El proyecto sigue una jerarquía estricta para separar la librería de los scripts de las tareas:
 
 ```text
 pic-design-common-library/
-├── README.md
-├── requirements.txt
-├── examples/
-│   ├── mzi_example.py
-│   ├── ring_example.py
-│   ├── waveguide_example.py
-│   └── lca_example.py
-├── picdesign/
-│   ├── __init__.py
-│   ├── materials.py
-│   ├── waveguides.py
-│   ├── resonators.py
-│   ├── interferometers.py
-│   ├── couplers.py
-│   ├── lca.py
-│   ├── dispersion.py
-│   └── gds_helpers.py
-└── docs/
-    └── usage.md
+├── README.md                  # Este archivo
+├── requirements.txt           # Dependencias del proyecto (numpy, scipy, gdstk, etc.)
+├── picdesign/                 # 🛠️ LIBRERÍA PRINCIPAL
+│   ├── __init__.py           
+│   ├── materials.py           # Modelos de dispersión de materiales (Sellmeier, etc.)
+│   ├── waveguides.py          # Condiciones monomodo, confinamiento, pérdidas
+│   ├── resonators.py          # FSR, radios de anillos, acoplamientos
+│   ├── interferometers.py     # Desbalance de MZI, acopladores direccionales
+│   ├── lca.py                 # Calculadora de Life Cycle Assessment (LCA)
+│   └── gds_helpers.py         # Funciones para automatizar la exportación a .gds
+├── docs/                      # Documentación adicional y guías de uso
+│   └── usage.md              
+├── examples/                  # Scripts rápidos para probar la librería
+│   ├── mzi_example.py        
+│   └── ring_example.py       
+└── coursework/                # 📚 TAREAS Y PROYECTO DEL CURSO
+    ├── HW1_Intro_Modes/       
+    ├── HW2_Waveguides/        
+    ├── HW3_Components/        
+    ├── HW4_Systems/           
+    ├── HW5_Sustainable_PIC/   # Lab 5 actual (LCA, Inverse Design, GNLSE)
+    └── Final_Project/         # Proyecto final integrador
