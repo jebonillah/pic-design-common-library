@@ -1,11 +1,11 @@
 # 🌟 PIC Design Common Library & Course Portfolio
 
 **Autor:** [Tu Nombre / Jesús David]  
-**Curso:** UNAL-BSU: PIC Design (Spring 2025 / 2026)  
+**Curso:** UNAL-BSU: PIC Design
 **Profesor:** Dr. Samuel Serna  
 
 ## 📖 Descripción General
-Este repositorio sirve como un portafolio integral y una librería de herramientas desarrolladas a lo largo del curso **Passive Integrated Photonics**. 
+Este repositorio sirve como un portafolio integral y una librería de herramientas desarrolladas a lo largo del curso **Diseño de Circuitos Fotonicos Integrados**. 
 
 El repositorio está dividido en dos propósitos principales:
 1. **`picdesign/`**: Una librería de Python modular, reutilizable y documentada para el diseño analítico y numérico de Circuitos Integrados Fotónicos (PICs) pasivos. Incluye cálculos de dispersión, pérdidas, resonadores, interferómetros y herramientas de exportación GDS.
