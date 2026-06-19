@@ -79,3 +79,4 @@ chip_final = attach_grating_couplers(mi_guia)
 
 # 3. Exportar el layout final a GDSII para la fábrica
 export_to_gds(chip_final, "mi_primer_chip_tapeout.gds")
+```
