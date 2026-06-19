@@ -28,7 +28,7 @@ print(f"Pérdida de propagación lineal: {loss_m1:.2f} m^-1")
 
 ```
 
-##2. Diseño de Resonadores e Interferómetros
+## 2. Diseño de Resonadores e Interferómetros
 Para aplicaciones de filtrado o sensado, el Rango Espectral Libre (FSR) es un parámetro crítico. Utiliza estos módulos para calcular las dimensiones físicas exactas (radios y desbalances) a partir de tu FSR objetivo.
 
 ```python
@@ -48,7 +48,7 @@ delta_L = mzi_path_length_imbalance(target_fsr_nm, group_index, wavelength)
 print(f"Para un FSR de 20 nm, el desbalance de los brazos del MZI (Delta L) es: {delta_L:.2f} um")
 ```
 
-##3. Evaluación de Sostenibilidad (Life Cycle Assessment - LCA)
+## 3. Evaluación de Sostenibilidad (Life Cycle Assessment - LCA)
 Integrar métricas de sostenibilidad en la fase de diseño es fundamental (Lab 5). Esta librería incluye una calculadora LCA simplificada para estimar la huella de carbono de tu chip durante su fabricación en la foundry.
 
 ```python
@@ -64,7 +64,7 @@ co2_emissions = simple_lca_score(volumen_si, energia, agua, material="silicon")
 print(f"Huella de Carbono estimada del proceso: {co2_emissions:.2f} kg CO2 eq")
 ```
 
-##4. Ensamblaje y Exportación a GDSII (Tape-out)
+## 4. Ensamblaje y Exportación a GDSII (Tape-out)
 Una vez que las dimensiones analíticas están validadas, puedes integrarlas con gdsfactory para generar la máscara de fotolitografía. Nuestras funciones de ayuda automatizan la inserción de acopladores (Grating Couplers) y la exportación.
 
 ```python
