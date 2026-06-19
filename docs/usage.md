@@ -28,11 +28,10 @@ print(f"Pérdida de propagación lineal: {loss_m1:.2f} m^-1")
 
 ```
 
-```python
 ##2. Diseño de Resonadores e Interferómetros
 Para aplicaciones de filtrado o sensado, el Rango Espectral Libre (FSR) es un parámetro crítico. Utiliza estos módulos para calcular las dimensiones físicas exactas (radios y desbalances) a partir de tu FSR objetivo.
 
-
+```python
 from picdesign.resonators import ring_circumference_and_radius
 from picdesign.interferometers import mzi_path_length_imbalance
 
