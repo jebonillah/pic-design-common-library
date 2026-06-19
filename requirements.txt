@@ -1,0 +1,9 @@
+matplotlib>=2.2.2
+numpy<2.0.0
+scipy>=1.1.0
+gdspy
+picwriter
+tidy3d
+tidy3d\[extras]
+gdsfactory
+gplugins[tidy3d]
