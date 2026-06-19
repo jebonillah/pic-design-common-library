@@ -1,5 +1,3 @@
-# picdesign/waveguides.py
-
 import numpy as np
 
 def convert_propagation_loss(loss_value, to_db_per_cm=True):
