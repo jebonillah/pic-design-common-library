@@ -25,10 +25,14 @@ print(f"¿Es monomodo?: {is_single} (Frecuencia Normalizada V = {v_num:.2f})")
 # 2. Convertir pérdidas reportadas en la literatura (ej. 2.5 dB/cm a m^-1)
 loss_m1 = convert_propagation_loss(2.5, to_db_per_cm=False)
 print(f"Pérdida de propagación lineal: {loss_m1:.2f} m^-1")
-2. Diseño de Resonadores e Interferómetros
+
+```
+
+```python
+##2. Diseño de Resonadores e Interferómetros
 Para aplicaciones de filtrado o sensado, el Rango Espectral Libre (FSR) es un parámetro crítico. Utiliza estos módulos para calcular las dimensiones físicas exactas (radios y desbalances) a partir de tu FSR objetivo.
 
-Python
+
 from picdesign.resonators import ring_circumference_and_radius
 from picdesign.interferometers import mzi_path_length_imbalance
 
@@ -43,10 +47,12 @@ print(f"Para un FSR de 20 nm, el radio del anillo debe ser: {radius:.2f} um")
 # Calcular desbalance del Mach-Zehnder Interferometer (MZI)
 delta_L = mzi_path_length_imbalance(target_fsr_nm, group_index, wavelength)
 print(f"Para un FSR de 20 nm, el desbalance de los brazos del MZI (Delta L) es: {delta_L:.2f} um")
-3. Evaluación de Sostenibilidad (Life Cycle Assessment - LCA)
+```
+
+##3. Evaluación de Sostenibilidad (Life Cycle Assessment - LCA)
 Integrar métricas de sostenibilidad en la fase de diseño es fundamental (Lab 5). Esta librería incluye una calculadora LCA simplificada para estimar la huella de carbono de tu chip durante su fabricación en la foundry.
 
-Python
+```python
 from picdesign.lca import simple_lca_score
 
 # Datos estimados de un proceso litográfico para un lote de chips
@@ -57,10 +63,12 @@ agua = 50.0        # Litros de agua ultrapura consumidos
 # Calcular impacto ambiental
 co2_emissions = simple_lca_score(volumen_si, energia, agua, material="silicon")
 print(f"Huella de Carbono estimada del proceso: {co2_emissions:.2f} kg CO2 eq")
-4. Ensamblaje y Exportación a GDSII (Tape-out)
+```
+
+##4. Ensamblaje y Exportación a GDSII (Tape-out)
 Una vez que las dimensiones analíticas están validadas, puedes integrarlas con gdsfactory para generar la máscara de fotolitografía. Nuestras funciones de ayuda automatizan la inserción de acopladores (Grating Couplers) y la exportación.
 
-Python
+```python
 import gdsfactory as gf
 from picdesign.gds_helpers import attach_grating_couplers, export_to_gds
 
