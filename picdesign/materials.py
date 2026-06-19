@@ -1,5 +1,3 @@
-# picdesign/materials.py
-
 import numpy as np
 
 def sellmeier_index(wavelength, b1, b2, b3, c1, c2, c3):
