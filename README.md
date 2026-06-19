@@ -37,5 +37,5 @@ pic-design-common-library/
     ├── HW2_Waveguides/        
     ├── HW3_Components/        
     ├── HW4_Systems/           
-    ├── HW5_Sustainable_PIC/   # Lab 5 actual (LCA, Inverse Design, GNLSE)
-    └── Final_Project/         # Proyecto final integrador
+    ├── HW5_Sustainable_PIC/  
+    └── Final_Project/
