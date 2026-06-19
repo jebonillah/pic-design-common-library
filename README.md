@@ -1,8 +1,10 @@
 # 🌟 PIC Design Common Library & Course Portfolio
 
-**Autor:** [Tu Nombre / Jesús David]  
-**Curso:** UNAL-BSU: PIC Design
-**Profesor:** Dr. Samuel Serna  
+**Autor:** Jesús David Bonilla Hernández.
+
+**Curso:** UNAL-BSU: PIC Design.
+
+**Profesor:** Dr. Samuel Serna.
 
 ## 📖 Descripción General
 Este repositorio sirve como un portafolio integral y una librería de herramientas desarrolladas a lo largo del curso **Diseño de Circuitos Fotonicos Integrados**. 
